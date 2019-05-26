@@ -1,0 +1,23 @@
+{
+  "name": "Quote",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "content": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "author": {
+      "type": "belongsTo",
+      "model": "Author",
+      "foreignKey": "authorId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
